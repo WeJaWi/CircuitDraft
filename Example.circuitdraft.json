@@ -1,0 +1,147 @@
+{
+  "formatVersion" : 1,
+  "name" : "Control circuit example",
+  "pages" : [
+    {
+      "components" : [
+        {
+          "description" : "Supply terminal",
+          "id" : "58D0B3D5-2646-4441-AE24-6FE4593B46BD",
+          "kind" : "terminal",
+          "manufacturer" : "Example",
+          "part" : "TERM-2.5",
+          "rotation" : 0,
+          "tag" : "X1",
+          "x" : 160,
+          "y" : 240
+        },
+        {
+          "description" : "Control circuit fuse",
+          "id" : "0B77CE15-BD70-469C-B090-35D6103DD311",
+          "kind" : "fuse",
+          "manufacturer" : "Example",
+          "part" : "FUSE-2A",
+          "rotation" : 0,
+          "tag" : "F1",
+          "x" : 340,
+          "y" : 240
+        },
+        {
+          "description" : "Normally open switch",
+          "id" : "39F75793-12F3-4852-8FC8-3CA161E43B7B",
+          "kind" : "contact",
+          "manufacturer" : "Example",
+          "part" : "SW-NO",
+          "rotation" : 0,
+          "tag" : "S1",
+          "x" : 540,
+          "y" : 240
+        },
+        {
+          "description" : "Relay coil",
+          "id" : "994A2DB1-DE69-4CCE-8448-04217280E319",
+          "kind" : "coil",
+          "manufacturer" : "Example",
+          "part" : "RELAY-24",
+          "rotation" : 0,
+          "tag" : "K1",
+          "x" : 760,
+          "y" : 240
+        },
+        {
+          "description" : "Return terminal",
+          "id" : "4667A0F9-845F-4CA3-94F1-7BF826636071",
+          "kind" : "terminal",
+          "manufacturer" : "Example",
+          "part" : "TERM-2.5",
+          "rotation" : 0,
+          "tag" : "X2",
+          "x" : 960,
+          "y" : 240
+        }
+      ],
+      "id" : "695104D2-ED4D-4CD4-87A9-EEEECDBC0AD8",
+      "name" : "1 · Control circuit",
+      "wires" : [
+        {
+          "end" : {
+            "componentID" : "0B77CE15-BD70-469C-B090-35D6103DD311",
+            "pin" : 0,
+            "x" : 290,
+            "y" : 240
+          },
+          "id" : "D4BBD39A-25A1-41DA-950E-B7A28929C77B",
+          "label" : "",
+          "start" : {
+            "componentID" : "58D0B3D5-2646-4441-AE24-6FE4593B46BD",
+            "pin" : 1,
+            "x" : 210,
+            "y" : 240
+          },
+          "verticalFirst" : false
+        },
+        {
+          "end" : {
+            "componentID" : "39F75793-12F3-4852-8FC8-3CA161E43B7B",
+            "pin" : 0,
+            "x" : 490,
+            "y" : 240
+          },
+          "id" : "9D990735-707E-4B4B-8B71-757AE8A37DD8",
+          "label" : "",
+          "start" : {
+            "componentID" : "0B77CE15-BD70-469C-B090-35D6103DD311",
+            "pin" : 1,
+            "x" : 390,
+            "y" : 240
+          },
+          "verticalFirst" : false
+        },
+        {
+          "end" : {
+            "componentID" : "994A2DB1-DE69-4CCE-8448-04217280E319",
+            "pin" : 0,
+            "x" : 710,
+            "y" : 240
+          },
+          "id" : "F5445337-EB8B-4872-8E1C-FD869D13E35E",
+          "label" : "",
+          "start" : {
+            "componentID" : "39F75793-12F3-4852-8FC8-3CA161E43B7B",
+            "pin" : 1,
+            "x" : 590,
+            "y" : 240
+          },
+          "verticalFirst" : false
+        },
+        {
+          "end" : {
+            "componentID" : "4667A0F9-845F-4CA3-94F1-7BF826636071",
+            "pin" : 0,
+            "x" : 910,
+            "y" : 240
+          },
+          "id" : "02D12849-C9F8-4748-81D5-A68E832A17AA",
+          "label" : "",
+          "start" : {
+            "componentID" : "994A2DB1-DE69-4CCE-8448-04217280E319",
+            "pin" : 1,
+            "x" : 810,
+            "y" : 240
+          },
+          "verticalFirst" : false
+        }
+      ]
+    },
+    {
+      "components" : [
+
+      ],
+      "id" : "64666B1D-02E5-4A19-831A-F7E57B53DFCA",
+      "name" : "2 · Power circuit",
+      "wires" : [
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.DS_Store
+.build/
+CircuitDraft.app/
+*.dSYM/
+*.zip
+work/
+Automation/
+Integrations/.venv/
+__pycache__/
+*.pyc
+Integrations/third_party/eplan-mcp/mcp_server/scripts/generated/
+Integrations/third_party/eplan-mcp/mcp_server/scripts/results/

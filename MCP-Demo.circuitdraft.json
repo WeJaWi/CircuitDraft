@@ -1,0 +1,218 @@
+{
+  "formatVersion": 1,
+  "name": "Control circuit example",
+  "pages": [
+    {
+      "components": [
+        {
+          "description": "Supply terminal",
+          "id": "AF2DA685-CC18-433B-8C94-95CAC65C3ADD",
+          "kind": "terminal",
+          "manufacturer": "Example",
+          "part": "TERM-2.5",
+          "rotation": 0,
+          "tag": "X1",
+          "x": 160,
+          "y": 240
+        },
+        {
+          "description": "Control circuit fuse",
+          "id": "794F86EF-197D-41CD-9E89-54B2C039C572",
+          "kind": "fuse",
+          "manufacturer": "Example",
+          "part": "FUSE-2A",
+          "rotation": 0,
+          "tag": "F1",
+          "x": 340,
+          "y": 240
+        },
+        {
+          "description": "Normally open switch",
+          "id": "E3FA7E0E-A6BA-44B7-82B9-5532DCA07FEE",
+          "kind": "contact",
+          "manufacturer": "Example",
+          "part": "SW-NO",
+          "rotation": 0,
+          "tag": "S1",
+          "x": 540,
+          "y": 240
+        },
+        {
+          "description": "Relay coil",
+          "id": "005DB347-EC72-43ED-92FF-C067E70E6CB2",
+          "kind": "coil",
+          "manufacturer": "Example",
+          "part": "RELAY-24",
+          "rotation": 0,
+          "tag": "K1",
+          "x": 760,
+          "y": 240
+        },
+        {
+          "description": "Return terminal",
+          "id": "6D7BB18A-9BE6-453C-A153-388D96BC8322",
+          "kind": "terminal",
+          "manufacturer": "Example",
+          "part": "TERM-2.5",
+          "rotation": 0,
+          "tag": "X2",
+          "x": 960,
+          "y": 240
+        }
+      ],
+      "id": "E6BA1812-E1FF-46A4-9A3D-F74C631DA90A",
+      "name": "1 \u00b7 Control circuit",
+      "wires": [
+        {
+          "end": {
+            "componentID": "794F86EF-197D-41CD-9E89-54B2C039C572",
+            "pin": 0,
+            "x": 290,
+            "y": 240
+          },
+          "id": "F377262D-EB31-42E9-8999-023A09F5ECBC",
+          "label": "",
+          "start": {
+            "componentID": "AF2DA685-CC18-433B-8C94-95CAC65C3ADD",
+            "pin": 1,
+            "x": 210,
+            "y": 240
+          },
+          "verticalFirst": false
+        },
+        {
+          "end": {
+            "componentID": "E3FA7E0E-A6BA-44B7-82B9-5532DCA07FEE",
+            "pin": 0,
+            "x": 490,
+            "y": 240
+          },
+          "id": "3E589B86-5E2D-4FF0-A655-8F6381DCABD1",
+          "label": "",
+          "start": {
+            "componentID": "794F86EF-197D-41CD-9E89-54B2C039C572",
+            "pin": 1,
+            "x": 390,
+            "y": 240
+          },
+          "verticalFirst": false
+        },
+        {
+          "end": {
+            "componentID": "005DB347-EC72-43ED-92FF-C067E70E6CB2",
+            "pin": 0,
+            "x": 710,
+            "y": 240
+          },
+          "id": "282A04B9-D4F9-4B8B-B307-8CFDE7186698",
+          "label": "",
+          "start": {
+            "componentID": "E3FA7E0E-A6BA-44B7-82B9-5532DCA07FEE",
+            "pin": 1,
+            "x": 590,
+            "y": 240
+          },
+          "verticalFirst": false
+        },
+        {
+          "end": {
+            "componentID": "6D7BB18A-9BE6-453C-A153-388D96BC8322",
+            "pin": 0,
+            "x": 910,
+            "y": 240
+          },
+          "id": "04F4F53F-B1C8-48C0-9657-3EEE0D7849EA",
+          "label": "",
+          "start": {
+            "componentID": "005DB347-EC72-43ED-92FF-C067E70E6CB2",
+            "pin": 1,
+            "x": 810,
+            "y": 240
+          },
+          "verticalFirst": false
+        }
+      ]
+    },
+    {
+      "components": [],
+      "id": "896B1106-45FC-4388-98CA-4F80EC348968",
+      "name": "2 \u00b7 Power circuit",
+      "wires": []
+    },
+    {
+      "components": [
+        {
+          "description": "Created through native MCP",
+          "id": "7D9105D8-1AFF-4722-8ACE-368CC9F5144B",
+          "kind": "fuse",
+          "manufacturer": "Example",
+          "part": "FUSE-DEMO",
+          "rotation": 0,
+          "tag": "F2",
+          "x": 340,
+          "y": 380
+        },
+        {
+          "description": "Created through native MCP",
+          "id": "AA72AE0F-3969-4ADD-B619-11D990B2BD1A",
+          "kind": "contact",
+          "manufacturer": "Example",
+          "part": "CONTACT-DEMO",
+          "rotation": 0,
+          "tag": "S2",
+          "x": 580,
+          "y": 380
+        },
+        {
+          "description": "Created through native MCP",
+          "id": "B9F22F9A-AAA3-4315-82D9-6CA4560B1641",
+          "kind": "coil",
+          "manufacturer": "Example",
+          "part": "COIL-DEMO",
+          "rotation": 90,
+          "tag": "K2",
+          "x": 820,
+          "y": 380
+        }
+      ],
+      "id": "8D1DB2D8-7F07-41AC-BEBF-5D6851AFD190",
+      "name": "3 \u00b7 MCP automation demo",
+      "wires": [
+        {
+          "end": {
+            "componentID": "AA72AE0F-3969-4ADD-B619-11D990B2BD1A",
+            "pin": 0,
+            "x": 530,
+            "y": 380
+          },
+          "id": "9C91D885-965F-4E50-98B9-2F87B576E015",
+          "label": "",
+          "start": {
+            "componentID": "7D9105D8-1AFF-4722-8ACE-368CC9F5144B",
+            "pin": 1,
+            "x": 390,
+            "y": 380
+          },
+          "verticalFirst": false
+        },
+        {
+          "end": {
+            "componentID": "B9F22F9A-AAA3-4315-82D9-6CA4560B1641",
+            "pin": 0,
+            "x": 770,
+            "y": 380
+          },
+          "id": "DBEB4C56-B662-4147-A4FE-17459051C5DE",
+          "label": "",
+          "start": {
+            "componentID": "AA72AE0F-3969-4ADD-B619-11D990B2BD1A",
+            "pin": 1,
+            "x": 630,
+            "y": 380
+          },
+          "verticalFirst": false
+        }
+      ]
+    }
+  ]
+}

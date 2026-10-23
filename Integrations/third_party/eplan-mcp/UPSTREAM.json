@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/Canary-ECAD/eplan-mcp",
+  "commit": "0681c75cb5c2d75cbb6ca0db5e83625fdb1c6f4d",
+  "license": "MIT",
+  "included": "eplan-p8-mcp-server/mcp_server (unmodified source) and LICENSE"
+}
