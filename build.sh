@@ -24,6 +24,7 @@ cat > "$APP/Contents/Info.plist" <<'PLIST'
 <key>NSPrincipalClass</key><string>NSApplication</string>
 </dict></plist>
 PLIST
+cp LICENSE "$APP/Contents/Resources/LICENSE.txt"
 xattr -cr "$APP"
 codesign --force --sign - "$APP"
 ditto -c -k --keepParent --norsrc --noextattr "$APP" "$PWD/CircuitDraft-Mac.zip"
